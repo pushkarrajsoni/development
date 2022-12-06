@@ -1,0 +1,81 @@
+body{
+    /* basic margin reset */
+    margin: 0rem 2.5rem;
+   
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none; /*remove underline in anchor*/
+}
+.main-img{
+    /* height: 50vh; */
+    /* max-width: 90vw; */
+    /* width 100% and height auto is very good to use becuase it dynamically changes the size of img */
+    width: 100%;
+    height: auto;
+}
+li{
+    list-style: none;/*to remove dot in front of li element*/
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: red;
+}
+.parent{
+    /* border: 10px solid red; */
+    margin-top: 2rem;
+    /* flex is used to align elements in horizontal manner */
+    display: flex;
+    /* text inside that parent includes image will be centered */
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.child{
+    border: 5px solid white;
+}
+header{
+    /* flex is used for horizontal alignment */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin-left: 2rem;
+}
+nav{
+    margin-right: 1rem;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    border: 1px ;
+}
+ul>li{
+    width: 30%;
+    font-size: 1.5rem;
+}
+.footer_parent{
+    /* vertically center */
+    height: 5rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer_content{
+    color: white;
+    /* boldness */
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+   /* enforce uppercase */
+   text-transform: uppercase;
+
+}
