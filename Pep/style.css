@@ -39,6 +39,7 @@ a:hover{
     border: 5px solid white;
 }
 header{
+    /* flex is used for horizontal alignment */
     display: flex;
     justify-content: space-between;
     align-items: center;
