@@ -40,3 +40,15 @@ console.log(captain[varName]);
 varName = "Last Name";
 console.log(captain[varName]);     //this is the same as below one
 console.log(captain["Last Name"]); 
+
+// update and add
+delete captain.friends;
+
+// add
+captain.movie = ["Winter Soldier", "First Avenger", "Civil War"];
+let key = "comp"
+captain[key] = "DCU";
+
+// Upadte
+captain.isAvenger = false;
+console.log(captain);
