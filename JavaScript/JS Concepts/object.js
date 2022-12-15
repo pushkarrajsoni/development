@@ -20,8 +20,8 @@
     // key : string or number & value : amy valid js datatype
     
 let captain = {
-    firstName : "Steve",
-    LastName: "Roger",
+    FirstName : "Steve",
+    "Last Name": "Roger",
     friends: ["tony", "peter", "bruce"],
     address: {
         city: "manhattan",
@@ -31,5 +31,12 @@ let captain = {
     isAvenger: true, 
 }
 // console.log(captain);
-console.log(captain.address.city);
-console.log(captain.friends[1]);
+// console.log(captain.address.city);
+// console.log(captain.friends[1]);
+
+// get 
+let varName = "FirstName";
+console.log(captain[varName]);
+varName = "Last Name";
+console.log(captain[varName]);     //this is the same as below one
+console.log(captain["Last Name"]); 
