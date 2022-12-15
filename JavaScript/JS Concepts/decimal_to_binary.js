@@ -10,4 +10,4 @@ function decimalToBinary(dec) {
     return bin;
 }
 let binaryNumber = decimalToBinary(13);
-console.log(binaryNumber)
+console.log(binaryNumber);
