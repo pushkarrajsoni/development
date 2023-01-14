@@ -34,6 +34,11 @@ let captain = {
 // console.log(captain.address.city);
 // console.log(captain.friends[1]);
 
+// traverse
+for(let key in captain) {
+    console.log(captain[key])
+}
+
 // get 
 let varName = "FirstName";
 console.log(captain[varName]);
@@ -52,3 +57,23 @@ captain[key] = "DCU";
 // Upadte
 captain.isAvenger = false;
 console.log(captain);
+
+// differnce b/w dot and sqaure[]
+
+let obj = {
+    name: "Pushkar",
+    age: 23
+}
+
+// console.log(obj.name);
+// let key = "name";
+// // variable -> value get -> then searching
+// console.log(obj[key])
+
+function getValue(key) {
+    // console;log(obj.key);
+    console.log(obj[key]);
+}
+
+getValue("name");
+getValue("age");
