@@ -1,36 +1,36 @@
-// // it is the collection of elements or collection of anythings
-// let arr = ["Rajneesh", "Ram", "Shyam", "David"];
+// it is the collection of elements or collection of anythings
+let arr = ["Rajneesh", "Ram", "Shyam", "David"];
+console.log(arr);
+// print
 // console.log(arr);
-// // print
-// // console.log(arr);
-// // console.log(arr[2]);
-// // console.log(arr[1]);
-// // for (let sidx = 0; sidx < arr.length; sidx++) {
-// //     console.log(sidx);
-// //     console.log(arr[sidx]);
-// // }
+// console.log(arr[2]);
+// console.log(arr[1]);
+// for (let sidx = 0; sidx < arr.length; sidx++) {
+//     console.log(sidx);
+//     console.log(arr[sidx]);
+// }
 
-// // *****************last****************
-// // add
-// arr.push("aman");
-// arr.push("Subh");
-// console.log("...............................................");
-// console.log(arr);
-// // remove
-// arr.pop();
-// console.log("..................................................");
-// console.log(arr);
+// *****************last****************
+// add
+arr.push("aman");
+arr.push("Subh");
+console.log("...............................................");
+console.log(arr);
+// remove
+arr.pop();
+console.log("..................................................");
+console.log(arr);
 
-// // ************************Starting*************************
-// // add
-// arr.unshift("Bruce");
-// arr.unshift("Tony");
-// console.log("....................................................");
-// console.log(arr)
-// //remove
-// arr.shift();
-// console.log("................................................");
-// console.log(arr);
+// ************************Starting*************************
+// add
+arr.unshift("Bruce");
+arr.unshift("Tony");
+console.log("....................................................");
+console.log(arr)
+//remove
+arr.shift();
+console.log("................................................");
+console.log(arr);
 
 
 // write a JavaSript program to compute the union
