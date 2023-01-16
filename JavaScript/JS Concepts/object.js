@@ -1,23 +1,29 @@
-// // rough
-// console.log("before");
-// function fn(inp) {
-//     console.log(inp);
-//     return "hello";
-// }
-// let rVal = fn(10);
-// console.log(rVal);
-// console.log("b/w");
+//{ just concept rough
+console.log("before");
+function fn(inp) {
+    //console.log(inp);
+    return "helllo";
+}
+let rVal = fn(15);
+console.log(rVal);
+       //OR
+fn(15);
+console.log(fn(15));
+// both above are same
+console.log("b/w");
+fn("hello"); //it will not going to print because we have not called it
+console.log("after");
+//}
 
-// fn("hello");
-// console.log("after");
-
+// objects from here-------->
 // it is non-primituve datatype that is used to represent anything
 // empty object creation
 // let obj = {
+
+    // collection of key:value pair,
+    // key : string or number & value : any valid js datatype
     
     // };
-    // collection of key:value pair,
-    // key : string or number & value : amy valid js datatype
     
 let captain = {
     FirstName : "Steve",
@@ -28,7 +34,7 @@ let captain = {
         state: "NY"
     },
     age: 46,
-    isAvenger: true, 
+    isAvenger: true
 }
 // console.log(captain);
 // console.log(captain.address.city);
@@ -46,7 +52,7 @@ varName = "Last Name";
 console.log(captain[varName]);     //this is the same as below one
 console.log(captain["Last Name"]); 
 
-// update and add
+// delete
 delete captain.friends;
 
 // add
@@ -58,7 +64,8 @@ captain[key] = "DCU";
 captain.isAvenger = false;
 console.log(captain);
 
-// differnce b/w dot and sqaure[]
+
+//  differnce b/w dot and sqaure[]
 
 let obj = {
     name: "Pushkar",
@@ -71,7 +78,7 @@ let obj = {
 // console.log(obj[key])
 
 function getValue(key) {
-    // console;log(obj.key);
+    // console.log(obj.key);
     console.log(obj[key]);
 }
 
