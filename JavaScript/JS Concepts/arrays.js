@@ -1,16 +1,16 @@
-// it is the collection of elements or collection of anythings
+// array is the collection of elements or collection of anythings
 let arr = ["Rajneesh", "Ram", "Shyam", "David"];
-console.log(arr);
+// console.log(arr);
 // print
 // console.log(arr);
 // console.log(arr[2]);
 // console.log(arr[1]);
-// for (let sidx = 0; sidx < arr.length; sidx++) {
-//     console.log(sidx);
-//     console.log(arr[sidx]);
-// }
+for (let sidx = 0; sidx < arr.length; sidx++) {
+    console.log(sidx);
+    console.log(arr[sidx]);
+}
 
-// *****************last****************
+// *****************executing  at last****************
 // add
 arr.push("aman");
 arr.push("Subh");
@@ -21,7 +21,7 @@ arr.pop();
 console.log("..................................................");
 console.log(arr);
 
-// ************************Starting*************************
+// ************************executing at Starting*************************
 // add
 arr.unshift("Bruce");
 arr.unshift("Tony");
@@ -39,8 +39,6 @@ console.log(arr);
 // Input arr1 = [1, 2, 3]
 // arr2 = [100, 2, 1, 10]
 // Output: [1, 2, 3, 100, 10]
-// slice and splice 
-// indexof and includes
 let arr1 = [1, 2, 3];
 let arr2 = [100, 2, 1, 10];
 for(let i = 0; i < arr1.length; i++){
@@ -51,9 +49,15 @@ for(let i = 0; i < arr1.length; i++){
             isPresent = true;
         }
     }
-
+    
     if(isPresent == false){
         arr2.push(elementToPut);
     }
 }
-console.log(arr2);
+// console.log(arr2);
+
+// slice and splice 
+let a = [10, 23, 43, 45, 76, 90];
+let spliceArray = a.splice(2, 4);
+console.log(spliceArray);
+// indexof and includes
