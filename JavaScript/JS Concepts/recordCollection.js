@@ -1,3 +1,5 @@
+// freecodecamp javascript -> record collection question
+
 let recordCollection = {
     2548: {
       albumTitle: 'Slippery When Wet',
@@ -20,8 +22,8 @@ let recordCollection = {
   
   function getValues(recordCollection, id, prop) {
     console.log(recordCollection[id][prop]); //prop -> property
-    
+
   }
   
-  getValues(recordCollection, 5439, "albumTitle");
-  getValues(recordCollection,2468, "tracks");
+  getValues(recordCollection, 5439, "albumTitle"); // it is giving the albumtitle of 5439
+  getValues(recordCollection,2468, "tracks");      // it is giving the tracks of the 2468

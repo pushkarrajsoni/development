@@ -1,26 +1,40 @@
-// no main
+// print no main nothing
 // top to bottom left to right
 // print
 console.log("Hello Pushkar :) ");
+
+
 // variable declare;
 let a;
 // default value -> undefined
+
 // dynamically typed language(js) -> ye btenge ki a ek variable hai
+
 // java -> statically typed lang -> ye batenge ki a variable hai aur kis type ka hai
+// java tells us both the name of the variable and the type of the variable
+
+// variable declare way
+// we just tell that a is variable
+
 // int a;
 // a me 10 hai
 // number
 a = 10;
 a = 10.1
+
 // boolean
 a = true;
+
 // string
 a = "hello";
 a = 'i am the same'
+
 // null
 a = null;
-console.log(a);
-// primitive stypes -> number, boolean, string, null, undefinec
+console.log('value of a', a);
+console.log(5/2); // => 2.5
+
+// primitive stypes -> number, boolean, string, null, undefined
 // node "fileName.js" -> for running the code in node(terminal)
 
 // ************for loop************

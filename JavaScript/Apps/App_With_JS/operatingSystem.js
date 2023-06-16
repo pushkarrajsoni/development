@@ -1,4 +1,4 @@
-//nodejs = please give me the access of the operating system module(app)
+// (require)nodejs = please give me the access of the operating system module(app)
 let os = require("os");
 
 //which architecture(bit) is installed

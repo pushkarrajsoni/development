@@ -1,20 +1,18 @@
-
+ 
+let path = require("path");
  
 // "G:\\Programming\\development\\JavaScript\\App_With_JS"; -> absolute Path 
-let path = require("path");
-
 // ..\App_With_JS\operatingSystem.js -> Relative path
-
 // "toBeRemoved" -> (filename)When you are in the same folder
 
-//Path Module
 
-// console.log(__dirname); //current folder in which we have our js file absolute path
-// console.log(__filename); //current file ka path
+//Path Module
+console.log(__dirname); //current folder in which we have our js file absolute path
+console.log(__filename); //current file ka path
 
 //abhi ye script app me convert hone ke baad ki path pe chal rahi hai
-//file kis folder me execute kar rhi hai
-console.log(process.cwd()); //it is current working directory
+//file kis folder me execute kar rhi hai 
+console.log(process.cwd()); //it is showing current working directory, provides the location of working directory
 
 
 
@@ -29,5 +27,5 @@ console.log(".....................................................");
 console.log(address);
 
 //extension
-path.extname();
+// path.extname();
 // path.basename();
