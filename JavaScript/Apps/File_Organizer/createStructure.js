@@ -1,19 +1,20 @@
 let path = require("path");
 let fs = require("fs");
 
-let modules = ["JavaScript", "Browser", "React", "Backend", "Git"];
-
 //process.cwd -> in which folder you are executing your file
 //webDev will add within the folder (x) in which you are working
 let webDevDirPath = path.join(process.cwd(), "Web Dev");
 
 //create folder/directory
 if(fs.existsSync(webDevDirPath)){
-    //do nothing
+    //do nothing, I don't need to create it.
     console.log("Web Dev folder already Exists");
 }else{
     fs.mkdirSync(webDevDirPath);
 }
+
+// path build 
+let modules = ["JavaScript", "Browser", "Express", "React", "Backend", "Git"];
 
 //create module inside these
 for (let i = 0; i < modules.length; i++) {

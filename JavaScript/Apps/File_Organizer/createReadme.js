@@ -1,7 +1,7 @@
- //is folder created or not
  let fs = require("fs");
  let path = require("path");
 
+ // for taking input 
  let input = process.argv.slice(2);
 
  // handle input case
@@ -27,8 +27,10 @@
         fs.mkdirSync(lecturePath);
     }
 
-
-     //create file -> file wala code
+     /* all the above code is the same code of the addLecture.js,
+     we are just adding the below sectoin for the readme file.  */
+     
+     //create file -> readme file wala code
     let filepath = path.join(lecturePath, "readme.md");
     if (fs.existsSync(filepath)) {
        console.log("Already Exists");
