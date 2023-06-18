@@ -13,6 +13,6 @@ let a = 10;
 //here node js helps us by making a module which exports the defined functions
 
 module.exports = {
-    fn: LibFn,
+    libdoc: LibFn,
     varName: a 
 }
