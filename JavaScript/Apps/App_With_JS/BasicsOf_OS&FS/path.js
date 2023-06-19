@@ -27,5 +27,5 @@ console.log(".....................................................");
 console.log(address);
 
 //extension
-// path.extname();
+// path.extname(); // gives only the working folder/file name not whole path.
 // path.basename();
