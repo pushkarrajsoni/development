@@ -37,7 +37,9 @@ fs.mkdirSync("NewFolder");
 
 
 // //DELETE
-// fs.rmdirSync("toBeRemovedFolder");
+fs.rmdirSync("toBeRemovedFolder");
+
+// It is used to synchronously read the contents of a given directory.
 let listofThingsInCurrentFolder = fs.readdirSync(__dirname);
 console.log(listofThingsInCurrentFolder);
 
