@@ -1,4 +1,5 @@
  
+const { copyFileSync } = require("fs");
 let path = require("path");
  
 // "G:\\Programming\\development\\JavaScript\\App_With_JS"; -> absolute Path 
@@ -26,6 +27,12 @@ let address = path.join(folderName, nextFolderName, childFolder, actualFile);
 console.log(".....................................................");
 console.log(address);
 
-//extension
+
+//other extension
 // path.extname(); // gives only the working folder/file name not whole path.
-// path.basename();
+let extname = path.extname(address);
+console.log("extname ", extname);
+
+// path.basename(); // provides the name of the last file pr folder name of the path
+let basename = path.basename(address);
+console.log("basename" ,basename);
