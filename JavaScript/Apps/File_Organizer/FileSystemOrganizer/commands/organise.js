@@ -8,11 +8,11 @@ let types = {
     app: ['exe', 'dmg', 'pkd']
 }
 
-
 function organizefn(dirPath) {
-    dirPath = dirPath != undefined ? dirPath : process.cwd();
+    dirPath = dirPath != undefined ? dirPath : process.cwd()
     organizeHelper(dirPath);
 }
+
 function organizeHelper(dirPath) {
     // create an organized_dir in dirpath
     let organizeddirPath = path.join(dirPath, "organized_dir");
@@ -28,7 +28,7 @@ function organizeHelper(dirPath) {
         let ans = isFile(assetPath);
         if (ans == true) {
             let type = getType(assetPath);
-            copytothatType(assetPath, types, organizeddirPath);
+            copytothatType(assetPath, type, organizeddirPath);
             //check extname
             
             //and copy the file from clutter to one of the folder inside organized_dir
@@ -64,9 +64,9 @@ function getType(assetPath) {
 }
 
 // copying the file from source to destination directory
-function copytothatType(assetPath, types, organizeddirPath) {
+function copytothatType(assetPath, type, organizeddirPath) {
     //organized_dir -> type wala folder create
-    let destFolderPath = path.join(organizeddirPath, types);
+    let destFolderPath = path.join(organizeddirPath, type);
     if(fs.existsSync(destFolderPath) == false) {
         fs.mkdirSync(destFolderPath);
     }
@@ -74,7 +74,7 @@ function copytothatType(assetPath, types, organizeddirPath) {
     let destFilePath = path.join(destFolderPath, originalName);
     fs.copyFileSync(assetPath, destFilePath);
     //content copy
-    console.log(originalName, " file copied to ",types);
+    console.log(originalName, " file copied to ",type);
 }
 
 
